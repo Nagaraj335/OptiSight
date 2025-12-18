@@ -1,0 +1,33 @@
+{
+    "accuracy": 0.975,
+    "precision": {
+        "amd": 1.0,
+        "cataract": 1.0,
+        "diabetes": 0.9591836734693877,
+        "normal": 0.9423076923076923
+    },
+    "recall": {
+        "amd": 0.98,
+        "cataract": 1.0,
+        "diabetes": 0.94,
+        "normal": 0.98
+    },
+    "f1": {
+        "amd": 0.98989898989899,
+        "cataract": 1.0,
+        "diabetes": 0.9494949494949495,
+        "normal": 0.9607843137254902
+    },
+    "support": {
+        "amd": 100,
+        "cataract": 100,
+        "diabetes": 100,
+        "normal": 100
+    },
+    "macro_precision": 0.97537284144427,
+    "macro_recall": 0.975,
+    "macro_f1": 0.9750445632798574,
+    "weighted_precision": 0.9753728414442701,
+    "weighted_recall": 0.975,
+    "weighted_f1": 0.9750445632798573
+}
