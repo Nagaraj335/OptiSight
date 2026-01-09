@@ -30,8 +30,8 @@ env/
 Thumbs.db
 desktop.ini
 
-# Model files (too large for GitHub)
-outputs/models/*.pth
+# Model files (using Git LFS)
+# outputs/models/*.pth
 
 # Logs and temporary files
 *.log
