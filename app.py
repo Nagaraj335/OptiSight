@@ -9,6 +9,27 @@ from PIL import Image
 import numpy as np
 import plotly.graph_objects as go
 import os
+import subprocess
+
+# Ensure models are downloaded (for Streamlit Cloud)
+def ensure_models():
+    """Download models from Git LFS if not present"""
+    os.makedirs('outputs/models', exist_ok=True)
+    
+    model_files = [
+        'outputs/models/best_model_resnet50.pth',
+        'outputs/models/glaucoma_model.pth'
+    ]
+    
+    missing = [f for f in model_files if not os.path.exists(f) or os.path.getsize(f) < 1000]
+    
+    if missing:
+        try:
+            subprocess.run(['git', 'lfs', 'pull'], check=False, capture_output=True)
+        except:
+            pass
+
+ensure_models()
 
 # Page configuration
 st.set_page_config(
